@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi String dan Number</title>
+  </head>
+  <body>
+    <script>
+      //String to Number
+      document.writeln(`Number: ${Number("55")}`);
+      document.writeln(`<br>`);
+      document.writeln(`parseFloat: ${parseFloat("55")}`);
+      document.writeln(`<br>`);
+      document.writeln(`parseInt: ${parseInt("55.566")}`);
+      document.writeln(`<br>`);
+      document.writeln(`<br>`);
+
+      //Number to String
+      document.writeln(`String: ${String(5)}`);
+      document.writeln(`<br>`);
+      document.writeln(`String: ${(66).toString()}`);
+      document.writeln(`<br>`);
+      document.writeln(`<br>`);
+
+      //Date to Number
+      const dateNow = new Date();
+
+      document.writeln(`getTime: ${dateNow.getTime()}`);
+      document.writeln(`<br>`);
+      document.writeln(`getMilliseconds: ${dateNow.getMilliseconds()}`);
+      document.writeln(`<br>`);
+      document.writeln(`getSeconds: ${dateNow.getSeconds()}`);
+      document.writeln(`<br>`);
+      document.writeln(`getMinutes: ${dateNow.getMinutes()}`);
+      document.writeln(`<br>`);
+      document.writeln(`getHours: ${dateNow.getHours()}`);
+      document.writeln(`<br>`);
+      document.writeln(`getDate: ${dateNow.getDate()}`);
+      document.writeln(`<br>`);
+      document.writeln(`getDay: ${dateNow.getDay()}`);
+      document.writeln(`<br>`);
+      document.writeln(`getMonth: ${dateNow.getMonth()}`);
+      document.writeln(`<br>`);
+      document.writeln(`getFullYear: ${dateNow.getFullYear()}`);
+      document.writeln(`<br>`);
+      document.writeln(`<br>`);
+
+      //Boolean to Number
+      document.writeln(`${Number(false)}`);
+      document.writeln(`<br>`);
+      document.writeln(`<br>`);
+
+      //Number to String
+      document.writeln(`${false.toString()}`);
+    </script>
+  </body>
+</html>

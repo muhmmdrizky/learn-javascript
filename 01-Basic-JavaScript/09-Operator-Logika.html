@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Logika</title>
+  </head>
+  <body>
+    <script>
+      // Operator && => jika salah satu false maka nilainya false
+      const sudahMakan = true;
+      const sudahMinum = true;
+
+      if (sudahMakan && sudahMinum) {
+        console.log(`Selamat anda sudah Makan dan Minum`);
+      } else {
+        console.log(`Anda belum Makan atau Minum`);
+      }
+
+      // Operator || => jika salah satu true maka nilainya true
+      const sudahTidur = true;
+      const sudahNgopi = false;
+
+      if (sudahTidur || sudahNgopi) {
+        console.log(true);
+      } else {
+        console.log(false);
+      }
+
+      // Operator ! (Not)
+      const angkaPertama = true;
+      console.log(!angkaPertama);
+
+      const angkaKedua = false;
+      console.log(!angkaKedua);
+    </script>
+  </body>
+</html>
