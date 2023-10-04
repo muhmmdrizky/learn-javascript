@@ -9,7 +9,23 @@
     <script>
       const buah = ["Anggur", "Apel", "Jeruk"];
 
-      console.log(buah);
+      //Menambah Array
+      buah.push("Pepaya", "Rambutan");
+      console.table(buah);
+
+      //Cek panjang array
+      console.log(`Panjang arraynya adalah: ${buah.length}`);
+
+      //Mendapatkan data di posisi index
+      console.log(buah[0]);
+
+      //Mengubah data array
+      buah[0] = "Pisang";
+      console.table(buah);
+
+      //Menghapus data array
+      delete buah[4];
+      console.table(buah);
     </script>
   </body>
 </html>
