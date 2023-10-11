@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Statement</title>
+  </head>
+  <body>
+    <script>
+      const nilai = "E";
+
+      switch (nilai) {
+        case "A":
+          console.info("Selamat anda lulus dengan nilai A");
+          break;
+        case "B":
+          console.info("Selamat anda lulus dengan nilai B");
+          break;
+        case "C":
+          console.info("Selamat anda lulus dengan nilai C");
+          break;
+        case "D":
+          console.info("Selamat anda lulus dengan nilai D");
+          break;
+        default:
+          console.info("Selamat anda lulus dengan nilai E");
+      }
+
+      let hasil;
+      const operator = "+";
+      const angkaPertama = 5;
+      const angkaKedua = 6;
+
+      switch (operator) {
+        case "+":
+          hasil = angkaPertama + angkaKedua;
+          console.info(`Hasil dari ${angkaPertama} + ${angkaKedua} = ${hasil}`);
+          break;
+        case "-":
+          hasil = angkaPertama - angkaKedua;
+          console.info(`Hasil dari ${angkaPertama} - ${angkaKedua} = ${hasil}`);
+          break;
+        case "*":
+          hasil = angkaPertama * angkaKedua;
+          console.info(`Hasil dari ${angkaPertama} * ${angkaKedua} = ${hasil}`);
+          break;
+        case "/":
+          hasil = angkaPertama / angkaKedua;
+          console.info(`Hasil dari ${angkaPertama} / ${angkaKedua} = ${hasil}`);
+          break;
+        default:
+          console.info("Simbol tidak valid");
+      }
+    </script>
+  </body>
+</html>

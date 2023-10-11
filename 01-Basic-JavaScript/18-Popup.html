@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup</title>
+  </head>
+  <body>
+    <script>
+      /*
+    3 Pop up di JavaScript
+    - Alert
+    - Prompt
+    - Confirm
+    */
+      //   const masuk = confirm("Anda yakin mau masuk?");
+
+      //   if (masuk) {
+      //     const nama = prompt("Masukkan nama anda");
+      //     alert(`Hello ${nama}`);
+      //   } else {
+      //     alert("Bye");
+      //   }
+
+      const operator = prompt("Masukkan operator: +, -, /, atau *");
+
+      const angkaPertama = Number(prompt("Masukkan angka pertama"));
+      const angkaKedua = Number(prompt("Masukkan angka kedua"));
+
+      let hasil;
+
+      if (operator == "+") {
+        hasil = angkaPertama + angkaKedua;
+        alert(`Hasil dari ${angkaPertama} + ${angkaKedua} adalah ${hasil}`);
+      } else if (operator == "-") {
+        hasil = angkaPertama - angkaKedua;
+        alert(`Hasil dari ${angkaPertama} - ${angkaKedua} adalah ${hasil}`);
+      } else if (operator == "/") {
+        hasil = angkaPertama / angkaKedua;
+        alert(`Hasil dari ${angkaPertama} / ${angkaKedua} adalah ${hasil}`);
+      } else {
+        hasil = angkaPertama * angkaKedua;
+        alert(`Hasil dari ${angkaPertama} * ${angkaKedua} adalah ${hasil}`);
+      }
+    </script>
+  </body>
+</html>

@@ -6,6 +6,36 @@
     <title>Tipe Data Object</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      // Membuat object kosong
+      const dataSiswa = {};
+
+      // Menambah atau mengubah property di object
+      dataSiswa["nama"] = "Muhammad Rizky";
+      dataSiswa["alamat"] = "Bogor";
+      dataSiswa["kelas"] = 12;
+
+      console.table(dataSiswa);
+
+      // Menghapus
+      delete dataSiswa["kelas"];
+
+      console.table(dataSiswa);
+
+      // Mengakses object dengan properties
+      const mahasiswa = {
+        nama: "Rony Parulian",
+        alamat: "Jakarta",
+        "program studi": "Teknik Sipil",
+        usia: 20,
+      };
+      console.table(mahasiswa);
+
+      // Mengakses property object
+      console.info(`Nama: ${mahasiswa.nama}`);
+      console.info(`Alamat: ${mahasiswa.alamat}`);
+      console.info(`Program Studi: ${mahasiswa["program studi"]}`);
+      console.info(`Usia: ${mahasiswa.usia}`);
+    </script>
   </body>
 </html>

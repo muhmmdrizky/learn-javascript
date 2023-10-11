@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undefined</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Undefined adalah sesuatu yang belum didefinisikan.
+        Misal kita membuat variabel yang belum diisi data, variabel tersebut berisi Undefined.
+        */
+
+      // Undefined Variable
+      let name;
+
+      if (name === undefined) {
+        console.info("Undefined");
+      } else {
+        console.info("Defined");
+      }
+
+      // Undefined Array Value
+      const fruits = ["Durian", "Pisang", "Jambu"];
+
+      if (fruits[5] === undefined) {
+        console.info("Data Undefined");
+      } else {
+        console.info("Data Defined");
+      }
+
+      // Undefined object Property
+      const mahasiswa = {};
+
+      if (mahasiswa.nama === undefined) {
+        console.info("Data mahasiswa undefined");
+      } else {
+        console.info("Data mahasiswa defined");
+      }
+    </script>
+  </body>
+</html>
