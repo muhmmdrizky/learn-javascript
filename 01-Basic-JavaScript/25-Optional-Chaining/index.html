@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optional Chaining</title>
+  </head>
+  <body>
+    <script>
+      /*
+        Optional chaining operator merupakan operator yang digunakan untuk mengamankan ketika ingin
+        mengakses property sebuah object dari data nullish (null or undefined).
+        Jika kita mengakses property sebuah object dari data nullish tanpa optional chaining operator akan terjadi error.
+        Dengan menggunakan optional chaining akan mengembalikan nilai undefined daripada error.
+        */
+      let student = {};
+      // Error
+      // document.writeln(student.address.city);
+
+      // Dengan optional chaining
+      document.writeln(student?.address?.city);
+    </script>
+  </body>
+</html>

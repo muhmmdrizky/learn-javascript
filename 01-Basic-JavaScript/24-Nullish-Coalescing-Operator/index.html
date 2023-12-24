@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nullish Coalescing Operator</title>
+  </head>
+  <body>
+    <script>
+      /*
+        - Misal kita ga mau nilai di variabel itu Null atau Undefined, kita bisa set nilai defaultnya
+        - Sebenernya bisa diset pakai if, tapi kalo lebih sederhana pake Nullish Coalescing Operator
+        */
+      let parameter = "Hello";
+      let data = parameter ?? "Nilai Default";
+      document.writeln(data);
+    </script>
+  </body>
+</html>

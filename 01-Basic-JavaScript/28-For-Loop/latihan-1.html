@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice For Loop</title>
+  </head>
+  <body>
+    <script>
+      // Practice 1
+      let noAngkot = 1;
+      let jmlAngkot = 10;
+      let angkotBeroperasi = 5;
+
+      for (noAngkot; noAngkot <= jmlAngkot; noAngkot++) {
+        if (noAngkot <= angkotBeroperasi) {
+          document.writeln(`Angkot ke-${noAngkot} beroperasi dengan baik.<br>`);
+        } else {
+          document.writeln(`Angkot ke-${noAngkot} sedang tidak beroperasi dengan baik.<br>`);
+        }
+      }
+
+      // ----------------------------------------------
+      for (let noGaris = 1; noGaris <= 50; noGaris++) {
+        document.writeln("-");
+      }
+
+      document.writeln("<br>");
+      document.writeln("<br>");
+      // ----------------------------------------------
+
+      // Practice 2
+      for (let row = 1; row <= 10; row++) {
+        for (let star = 1; star <= row; star++) {
+          document.writeln("*");
+        }
+        document.writeln("<br>");
+      }
+
+      // ----------------------------------------------
+      for (let noGaris = 1; noGaris <= 50; noGaris++) {
+        document.writeln("-");
+      }
+
+      document.writeln("<br>");
+      document.writeln("<br>");
+      // ----------------------------------------------
+
+      // Practice 3
+      for (let row = 10; row >= 1; row--) {
+        for (let star = 1; star <= row; star++) {
+          document.writeln("*");
+        }
+        document.writeln("<br>");
+      }
+
+      // ----------------------------------------------
+      for (let noGaris = 1; noGaris <= 50; noGaris++) {
+        document.writeln("-");
+      }
+
+      document.writeln("<br>");
+      document.writeln("<br>");
+      // ----------------------------------------------
+
+      // Practice 4
+      // Factorial
+      let n = 6;
+      let x = 1;
+      for (let i = 1; i <= n; i++) {
+        x *= i;
+      }
+      document.writeln(`The factorial of ${n} = ${x} <br>`);
+
+      // ----------------------------------------------
+      for (let noGaris = 1; noGaris <= 50; noGaris++) {
+        document.writeln("-");
+      }
+
+      document.writeln("<br>");
+      document.writeln("<br>");
+      // ----------------------------------------------
+
+      // Practice 4
+      let output = "";
+      for (let angka = 1; angka <= 100; angka++) {
+        if (angka <= 10) {
+          document.writeln(angka);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In Operator</title>
+  </head>
+  <body>
+    <script>
+      /*
+        - Untuk mengecek apakah sebuah property ada di dalam object atau tidak
+        - Akan mengembalikan nilai True or False
+        - Bisa juga digunakan untuk mengecek index array
+        - Hanya mengecek property atau index ada atau tidak
+        - Walaupun nilainya null atau undefined, akan tetap dianggap ada
+        */
+      const person = {
+        firstName: "Muhammad",
+        lastName: "Rizky",
+      };
+      const result = "firstName" in person;
+      document.writeln(`Hello ${result} <br>`);
+
+      //   Array
+      const names = ["Rizky", null, undefined];
+      const nameResult = 1 in names;
+      document.writeln(`Hello ${nameResult}`);
+    </script>
+  </body>
+</html>

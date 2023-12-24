@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For In</title>
+  </head>
+  <body>
+    <script>
+      /*
+        For in digunakan untuk mengambil property di dalam object atau index di dalam array
+        */
+      const person = {
+        firstName: "Muhammad",
+        middleName: "Muhammad",
+        lastName: "Rizky",
+      };
+
+      for (const property in person) {
+        document.writeln(`<p>${property} : ${person[property]}<p>`);
+      }
+    </script>
+  </body>
+</html>

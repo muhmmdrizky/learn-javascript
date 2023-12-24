@@ -7,15 +7,25 @@
   </head>
   <body>
     <script>
+      const value = 75;
+      let resultValue;
+      if (value >= 70) {
+        resultValue = `Selamat anda lulus dengan nilai ${value}`;
+      } else {
+        resultValue = `Maaf anda tidak lulus, nilai anda ${value}`;
+      }
+      document.writeln(`${resultValue} <br>`);
+
+      // Bisa disederhanakan menjadi sebagai berikut
       // Satu kondisi
       const nilai = 76;
       const pesan = nilai > 80 ? "Selamat Anda lulus." : "Maaf anda tidak lulus.";
-      console.log(pesan);
+      document.writeln(`${pesan}<br>`);
 
       // Lebih dari satu kondisi
       let nilaiUjian = 40;
       const grade = nilaiUjian > 80 ? "A" : nilaiUjian > 60 ? "B" : nilaiUjian > 50 ? "C" : nilaiUjian > 40 ? "D" : "E";
-      console.log(grade);
+      document.writeln(grade);
     </script>
   </body>
 </html>

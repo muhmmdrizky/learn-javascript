@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function</title>
+  </head>
+  <body>
+    <script>
+      const sayHello = (name) => {
+        const say = `Hello, ${name}`;
+        console.log(say);
+      };
+
+      sayHello("Muhammad Rizky");
+
+      // Arrow function lebih sederhana
+      const sayHi = (name) => console.log(`Hi, ${name}`);
+      sayHi("Rizky");
+
+      // Arrow function return value ga perlu kata kunci return
+      const sum = (first, second) => first + second;
+      console.log(`Hasilnya adalah: ${sum(5, 6)}`);
+
+      // Arrow function tanpa kurung parameter
+      // Syaratnya parameternya cuma satu
+      const sayBye = (name) => console.log(`Bye, ${name}`);
+      sayBye("Ahsan");
+
+      // Arrow function sebagai parameter
+
+      function giveMeName(callback) {
+        callback("Muhammad");
+      }
+      giveMeName((name) => console.log(`Hello, ${name}`));
+    </script>
+  </body>
+</html>

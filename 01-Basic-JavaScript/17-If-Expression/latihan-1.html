@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 1</title>
+  </head>
+  <body>
+    <script>
+      function testNum(a) {
+        let result;
+        if (a > 0) {
+          result = "Positive";
+        } else {
+          result = "Not Positive";
+        }
+        return result;
+      }
+      console.log(testNum(-5));
+
+      function checkValue(a, b) {
+        if (a === 1) {
+          if (b === 2) {
+            console.log("a is 1 and b is 2");
+          }
+        } else {
+          console.log("a is not 1");
+        }
+      }
+      checkValue(1, 2);
+
+      //   Check if a number is odd or even in JavaScript
+      function isEvenorOdd(num) {
+        if (num % 2 == 0) {
+          console.log(`${num} is an Even number`);
+        } else {
+          console.log(`${num} is an Odd number`);
+        }
+      }
+      isEvenorOdd(5);
+      isEvenorOdd(6);
+
+      //   Check if input variable is a number or not
+      function isValidNumber(num) {
+        if (isNaN(num)) {
+          console.log(`${num} is not a number`);
+        } else {
+          console.log(`${num} is a valid number`);
+        }
+      }
+      isValidNumber(5);
+      isValidNumber("55");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring</title>
+  </head>
+  <body>
+    <script>
+      // Desctructuring Array
+      {
+        const names = ["Rizky", "Ahsan", "Rony", "Rian", "Fajar"];
+        const [first, second, third, ...others] = names;
+
+        console.log(first);
+        console.log(second);
+        console.log(third);
+        console.log(others);
+      }
+
+      //   Mengambil data di object
+      {
+        const person = {
+          firstName: "Muhammad",
+          lastName: "Rizky",
+          address: {
+            street: "Jalan Jalan",
+            city: "Bogor",
+            country: "Indonesia",
+          },
+          hobby: "Eating",
+        };
+        let {
+          firstName,
+          lastName,
+          address: { country, city, street },
+          ...lainnya
+        } = person;
+        console.log(firstName);
+        console.log(lastName);
+        console.log(city);
+        console.log(street);
+        console.log(country);
+        console.log(lainnya);
+      }
+
+      //   Destructuring di function parameter 1
+      {
+        function displayPerson({ namaDepan, namaTengah, namaBelakang }) {
+          console.log(namaDepan);
+          console.log(namaTengah);
+          console.log(namaBelakang);
+        }
+      }
+
+      {
+        const student = {
+          namaDepan: "Mohammad",
+          namaTengah: "Ahsan",
+          namaBelakang: "Setiawan",
+        };
+        displayPerson(student);
+
+        //   Destructuring di function parameter 2
+        function sum([satu, dua]) {
+          return satu * dua;
+        }
+
+        console.log(sum([5, 6]));
+      }
+
+      {
+        // Default value
+        const names = ["Muhammad", "Rian", "Setiawan"];
+        const [firstName, middleName, lastName = "Ardianto"] = names;
+
+        console.log(firstName);
+        console.log(middleName);
+        console.log(lastName);
+      }
+
+      {
+        // Default value destructuring object
+        const person2 = {
+          firstName: "Ahmad",
+          middleName: "Abdul",
+          lastName: "Setiawan",
+        };
+        const { firstName, middleName = "Ahsan", lastName } = person2;
+        console.log(firstName);
+        console.log(middleName);
+        console.log(lastName);
+      }
+
+      {
+        let { firstName: namaDepan, middleName: namaTengah = "Ini Default", lastName: namaBelakang } = person2;
+
+        console.log(namaDepan);
+        console.log(namaTengah);
+        console.log(namaBelakang);
+      }
+    </script>
+  </body>
+</html>

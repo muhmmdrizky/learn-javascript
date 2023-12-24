@@ -25,7 +25,10 @@
       // Mengakses object dengan properties
       const mahasiswa = {
         nama: "Rony Parulian",
-        alamat: "Jakarta",
+        alamat: {
+          desa: "Cibadak",
+          kecamatan: "Ciampea",
+        },
         "program studi": "Teknik Sipil",
         usia: 20,
       };
@@ -33,7 +36,8 @@
 
       // Mengakses property object
       console.info(`Nama: ${mahasiswa.nama}`);
-      console.info(`Alamat: ${mahasiswa.alamat}`);
+      console.info(`Desa: ${mahasiswa.alamat.desa}`);
+      console.info(`Kecamatan: ${mahasiswa.alamat.kecamatan}`);
       console.info(`Program Studi: ${mahasiswa["program studi"]}`);
       console.info(`Usia: ${mahasiswa.usia}`);
     </script>

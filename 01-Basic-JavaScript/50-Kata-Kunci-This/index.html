@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kata Kunci This</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        name: "Rizky",
+        sayHello: function (value) {
+          console.log(`Hello, ${value}, my name is ${this.name}`);
+        },
+      };
+      person.sayHello("Ahsan");
+    </script>
+  </body>
+</html>
