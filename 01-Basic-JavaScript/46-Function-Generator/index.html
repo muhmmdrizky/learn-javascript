@@ -7,42 +7,52 @@
   </head>
   <body>
     <script>
-      function* createNames() {
-        yield "Mohammad";
-        yield "Ahsan";
-        yield "Setiawan";
-      }
+      {
+        function* createNames() {
+          yield "Mohammad";
+          yield "Ahsan";
+          yield "Setiawan";
+        }
 
-      const names = createNames();
-      for (const name of names) {
-        console.log(name);
-      }
-
-      // lazy
-      function* buatGanjil(value) {
-        for (let i = 1; i <= value; i++) {
-          if (i % 2 === 1) {
-            console.log(`Yield $i`);
-            yield i;
-          }
+        const names = createNames();
+        for (const name of names) {
+          console.log(name);
         }
       }
 
-      // eager
-      function buatGanjilArray(value) {
-        const result = [];
-        for (let i = 1; i <= value; i++) {
-          if (i % 2 === 1) {
-            console.log(`Yield ${i}`);
-            result.push(i);
+      {
+        // lazy
+        function* buatGanjil(value) {
+          for (let i = 1; i <= value; i++) {
+            if (i % 2 === 1) {
+              console.log(`Yield $i`);
+              yield i;
+            }
           }
         }
-        return result;
+
+        const numbers = buatGanjil(100);
+        // for (const number of numbers) {
+        //   console.log(number);
+        // }
+        console.log(numbers.next().value);
       }
 
-      const numbers = buatGanjilArray(100);
+      {
+        // eager
+        function buatGanjilArray(value) {
+          const result = [];
+          for (let i = 1; i <= value; i++) {
+            if (i % 2 === 1) {
+              console.log(`Yield ${i}`);
+              result.push(i);
+            }
+          }
+          return result;
+        }
 
-      console.log(numbers.next().value);
+        const numbers = buatGanjilArray(100);
+      }
     </script>
   </body>
 </html>

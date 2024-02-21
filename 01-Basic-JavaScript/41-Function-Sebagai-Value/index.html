@@ -7,11 +7,25 @@
   </head>
   <body>
     <script>
+      /*
+      
+      */
       function sayHello(name) {
         console.log(`Hello ${name}`);
       }
+
+      // ga perlu () karena kalo pakai () artinya memanggil function
+      // kita pengen nyimpen functionnya ke variable
       const say = sayHello;
       say("Rizky");
+
+      // function sebagai parameter
+      function giveMeName(callback) {
+        callback("Ahmad"); // sayHello("Ahmad");
+      }
+
+      giveMeName(sayHello);
+      giveMeName(say); // giveMeName(sayHello)
     </script>
   </body>
 </html>
