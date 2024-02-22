@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Property di Constructor Function</title>
+    <title>Method di Constructor Function</title>
   </head>
   <body>
     <script>
@@ -12,19 +12,18 @@
       function Person() {
         this.firstName = "";
         this.lastName = "";
+        this.sayHello = function (name) {
+          console.log(`Hello, ${name}, my name is ${this.firstName} ${this.lastName}.`);
+        };
       }
 
       // membuat object
       const one = new Person();
       one.firstName = "Muhammad";
       one.lastName = "Rizky";
-
-      const two = new Person();
-      two.firstName = "Mohammad";
-      two.lastName = "Ahsan";
+      one.sayHello("Abdul");
 
       console.log(one);
-      console.log(two);
     </script>
   </body>
 </html>

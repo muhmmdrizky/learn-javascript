@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prototype</title>
+  </head>
+  <body>
+    <script>
+      // Membuat constructor function
+      // nama function diawali huruf besar
+      function Person(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.sayHello = function (name) {
+          console.log(`Hello, ${name}, my name is ${this.firstName}.`);
+        };
+      }
+
+      Person.prototype.sayBye = function () {
+        console.log("Good bye");
+      };
+
+      Person.prototype.run = function () {
+        console.log(`${this.firstName} is running.`);
+      };
+
+      // membuat object
+      const one = new Person("Muhammad", "Rizky");
+      one.sayBye = function () {
+        console.log("Sampai jumpa");
+      };
+
+      console.log(one);
+
+      one.sayBye();
+    </script>
+  </body>
+</html>
