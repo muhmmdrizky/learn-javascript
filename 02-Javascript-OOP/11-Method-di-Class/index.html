@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Method di Class</title>
+  </head>
+  <body>
+    <script>
+      // method di class nempelnya di class, bukan di instance object
+      class Person {
+        constructor(name) {
+          // property
+          this.name = name;
+        }
+
+        // method
+        sayHello(name) {
+          console.log(`Hallo, ${name}, my name is ${this.name}.`);
+        }
+      }
+
+      const one = new Person("Rizky");
+      console.log(one);
+      one.sayHello("Abdul");
+
+      const two = new Person("Ahmad");
+      console.log(two);
+      two.sayHello("Rony");
+    </script>
+  </body>
+</html>
