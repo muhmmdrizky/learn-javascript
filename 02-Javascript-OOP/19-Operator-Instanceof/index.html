@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator Instanceof</title>
+  </head>
+  <body>
+    <script>
+      class Employee {}
+      class Manager extends Employee {}
+
+      const one = new Employee();
+      const two = new Manager();
+
+      console.log(typeof one);
+      console.log(typeof two);
+      console.log(one instanceof Employee); // true
+      console.log(one instanceof Manager); // false
+      console.log(two instanceof Employee); // false -> jadi true karena di tambah extends (pewarisan) dari class employee
+      console.log(two instanceof Manager); // true
+    </script>
+  </body>
+</html>
