@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Class" content="width=device-width, initial-scale=1.0" />
+    <title>Default Variable</title>
+    <script type="module" src="../scripts/defaultclass.js"></script>
+  </head>
+  <body>
+    <script type="module">
+      import { default as Person } from "../scripts/defaultclass.js";
+      const person = new Person("Abdul");
+      person.sayHi();
+    </script>
+  </body>
+</html>

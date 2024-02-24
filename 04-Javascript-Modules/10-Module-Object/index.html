@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="Class" content="width=device-width, initial-scale=1.0" />
+    <title>Module Object</title>
+    <script type="module" src="../scripts/moduleobject.js"></script>
+  </head>
+  <body>
+    <script type="module">
+      import * as importmodule from "../scripts/moduleobject.js";
+
+      console.log(importmodule.firstName);
+      console.log(importmodule.middleName);
+      console.log(importmodule.lastName);
+
+      importmodule.hello();
+
+      const person = new importmodule.Person();
+      console.log(person.name);
+    </script>
+  </body>
+</html>

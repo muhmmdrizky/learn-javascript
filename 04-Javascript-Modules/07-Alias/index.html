@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alias</title>
+    <script type="module" src="../scripts/alias.js"></script>
+  </head>
+  <body>
+    <script type="module">
+      // direkomendasikan
+      import { name as nama, sum as penjumlahan, Person as Orang } from "../scripts/alias.js";
+      console.log(nama);
+      console.log(penjumlahan(6, 6));
+      const a = new Orang();
+    </script>
+  </body>
+</html>

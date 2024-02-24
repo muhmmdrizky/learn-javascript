@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Export Multiple</title>
+    <script type="module" src="../scripts/multiple.js"></script>
+  </head>
+  <body>
+    <script type="module">
+      import { name, sum, Person } from "../scripts/multiple.js";
+
+      console.log(name);
+      console.log(sum(5, 5));
+      const a = new Person();
+    </script>
+  </body>
+</html>
