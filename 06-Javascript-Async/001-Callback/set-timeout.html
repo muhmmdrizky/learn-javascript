@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Set Timeout</title>
+    <title>setTimeout</title>
   </head>
   <body>
     <script>
-      const addElement = () => {
+      function addElement() {
         const header = document.createElement("h1");
-        header.textContent = "Hello world";
+        header.textContent = "Hello World!";
 
         document.body.appendChild(header);
-      };
+      }
 
       setTimeout(addElement, 5000);
+      console.log("Program selesai");
     </script>
   </body>
 </html>
